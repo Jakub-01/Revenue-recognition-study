@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Revenue recognition tool</title>
+    <style>
+      body {
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+      }
+      #header {
+        text-align: center;
+        background-color: #4b8bbe;
+        color: white;
+        padding: 20px;
+      }
+      #button {
+        display: block;
+        margin: 30px auto 0;
+        padding: 10px 30px;
+        background-color: #4b8bbe;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+	width: 50%;
+      }
+      #button:hover {
+        background-color: #2d6187;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Revenue recognition tool</h1>
+    </div>
+    <button id="button" onclick="button_clicked_validation()">Revenue recognition validation</button>
+	<button id="button" onclick="button_clicked_allocation()">Revenue recognition allocation</button>
+    <script>
+      function button_clicked_validation() {
+        window.location.href = "/revenue_parameters";
+      }
+	  function button_clicked_allocation() {
+        window.location.href = "/revenue_allocation";
+      }
+    </script>  
+  </body>
+</html>
